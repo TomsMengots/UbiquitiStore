@@ -1,3 +1,5 @@
-export const getIconPath = (type: string, isActive: boolean) => {
-  return `/icons/${type}_${isActive ? "active" : "default"}.svg`;
+export const getIconPath = (view: string, isActive: boolean) => {
+  const iconType = isActive ? "active" : "default";
+
+  return `/icons/${view}_${iconType}.svg`;
 };
