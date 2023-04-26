@@ -12,7 +12,7 @@ const UContextCard = ({ choices, selected, title, onUpdate }: IProps) => {
 
   return (
     <div className="flex flex-col h-72 pt-5 pb-8 px-4">
-      <h6 className="text-ubiqiti-black-85 text-sm font-bold leading-6 mb-5">
+      <h6 className="text-ubiquiti-black-85 text-sm font-bold leading-6 mb-5">
         {title}
       </h6>
 
@@ -23,7 +23,7 @@ const UContextCard = ({ choices, selected, title, onUpdate }: IProps) => {
               <label
                 htmlFor={choice}
                 key={choice}
-                className="flex items-center cursor-pointer hover:bg-ubiqiti-neutral-2 transition duration-200 ease-linear px-2"
+                className="flex items-center cursor-pointer hover:bg-ubiquiti-neutral-2 transition duration-200 ease-linear px-2"
               >
                 <input
                   id={choice}
@@ -34,7 +34,7 @@ const UContextCard = ({ choices, selected, title, onUpdate }: IProps) => {
                   onChange={onChoiceUpdated}
                 />
 
-                <span className="block text-ubiqiti-dark">{choice}</span>
+                <span className="block text-ubiquiti-dark">{choice}</span>
               </label>
             );
           })}

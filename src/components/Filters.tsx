@@ -55,7 +55,7 @@ const Filters = ({ filters, productChoices, updateFilters }: IProps) => {
       : "/icons/grid_default.svg";
 
   return (
-    <div className="flex justify-center border-b border-b-ubiqiti-neutral-3">
+    <div className="flex justify-center border-b border-b-ubiquiti-neutral-3">
       <div className="relative flex flex-col md:flex-row md:items-center justify-between py-2 px-5 md:pr-7 xl:pr-0 w-full xl:max-w-[1308px]">
         <UInput
           value={filters.search}
@@ -80,16 +80,16 @@ const Filters = ({ filters, productChoices, updateFilters }: IProps) => {
           </button>
           <button
             type="button"
-            className="text-sm leading-6 text-ubiqiti-black-45 outline-none"
+            className="text-sm leading-6 text-ubiquiti-black-45 outline-none"
             onClick={() => setIsContextCardOpen(true)}
           >
             Filter
           </button>
 
           {isContextCardOpen && (
-            <div className="max-w-[256px] w-full absolute right-0 top-0 bg-white z-10 shadow-ubiqiti">
-              <div className="border-b border-b-ubiqiti-neutral-3 px-6 py-3 flex items-center justify-between">
-                <p className="text-ubiqiti-dark text-sm leading-6 cursor-default">
+            <div className="max-w-[256px] w-full absolute right-0 top-0 bg-white z-10 shadow-ubiquiti">
+              <div className="border-b border-b-ubiquiti-neutral-3 px-6 py-3 flex items-center justify-between">
+                <p className="text-ubiquiti-dark text-sm leading-6 cursor-default">
                   Filter
                 </p>
                 <button

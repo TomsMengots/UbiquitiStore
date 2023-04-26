@@ -19,5 +19,5 @@ body {
 }
 
 input::placeholder {
-  @apply text-ubiqiti-black-45;
+  @apply text-ubiquiti-black-45;
 }

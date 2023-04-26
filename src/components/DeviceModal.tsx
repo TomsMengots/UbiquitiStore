@@ -64,7 +64,7 @@ const DeviceModal = ({ device, onCloseModal }: IProps) => {
 
   return (
     <div className="device-modal fixed top-14 bg-white z-20 w-full pb-20">
-      <div className="relative h-12 border-b border-b-ubiqiti-neutral-3 flex justify-between pl-[30px] pr-7">
+      <div className="relative h-12 border-b border-b-ubiquiti-neutral-3 flex justify-between pl-[30px] pr-7">
         <button
           type="button"
           className="flex items-center mb-1"
@@ -72,7 +72,7 @@ const DeviceModal = ({ device, onCloseModal }: IProps) => {
         >
           <UArrowIcon />
         </button>
-        <h4 className="text-ubiqiti-black-45 text-sm leading-[44px]">
+        <h4 className="text-ubiquiti-black-45 text-sm leading-[44px]">
           {device.product.name}
         </h4>
         &nbsp;
@@ -94,12 +94,12 @@ const DeviceModal = ({ device, onCloseModal }: IProps) => {
               return (
                 <div
                   key={label}
-                  className="flex justify-between md:w-[400px] border-b border-b-ubiqiti-neutral-3 py-2"
+                  className="flex justify-between md:w-[400px] border-b border-b-ubiquiti-neutral-3 py-2"
                 >
-                  <span className="text-ubiqiti-dark text-sm leading-6">
+                  <span className="text-ubiquiti-dark text-sm leading-6">
                     {label}
                   </span>
-                  <span className="text-ubiqiti-dark text-sm leading-6">
+                  <span className="text-ubiquiti-dark text-sm leading-6">
                     {value}
                   </span>
                 </div>

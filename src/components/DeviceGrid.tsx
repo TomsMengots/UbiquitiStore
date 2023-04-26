@@ -24,7 +24,7 @@ const DeviceGrid = ({ devices, onSelectDevice }: IProps) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="flex w-full px-4 md:max-w-[1262px]">
-        <p className="text-xs leading-5 text-ubiqiti-neutral-4 my-2.5">
+        <p className="text-xs leading-5 text-ubiquiti-neutral-4 my-2.5">
           {devices.length} Devices
         </p>
       </div>

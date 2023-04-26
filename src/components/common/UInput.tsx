@@ -25,7 +25,7 @@ const UInput = ({ value, onUpdate, onClear }: IProps) => {
         type="text"
         value={value}
         placeholder="Search"
-        className="w-full h-8 bg-ubiqiti-neutral-1 text-ubiqiti-black-85 rounded py-1.5 px-8 outline-none caret-ubiqiti-blue text-sm leading-6"
+        className="w-full h-8 bg-ubiquiti-neutral-1 text-ubiquiti-black-85 rounded py-1.5 px-8 outline-none caret-ubiquiti-blue text-sm leading-6"
         onChange={updateInput}
       />
       <button

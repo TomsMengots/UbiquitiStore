@@ -18,8 +18,8 @@ const UEmptyState = ({ title, description, isError = false }: IProps) => {
           className="object-cover"
         />
       )}
-      <h2 className="text-2xl font-bold text-ubiqiti-dark mb-2">{title}</h2>
-      <p className="text-lg text-ubiqiti-black-45">{description}</p>
+      <h2 className="text-2xl font-bold text-ubiquiti-dark mb-2">{title}</h2>
+      <p className="text-lg text-ubiquiti-black-45">{description}</p>
     </section>
   );
 };

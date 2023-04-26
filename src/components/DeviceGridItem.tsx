@@ -8,8 +8,8 @@ interface IProps {
 
 const DeviceGridItem = ({ item }: IProps) => {
   return (
-    <div className="rounded border border-ubiqiti-neutral-3 overflow-hidden">
-      <div className="bg-ubiqiti-neutral-1 flex items-center justify-center">
+    <div className="rounded border border-ubiquiti-neutral-3 overflow-hidden">
+      <div className="bg-ubiquiti-neutral-1 flex items-center justify-center">
         <Image
           src={`${ICONS_BASE_URL}${item.icon.id}_257x257.png`}
           width={256}
@@ -22,13 +22,13 @@ const DeviceGridItem = ({ item }: IProps) => {
       <div className="p-3 w-full text-left">
         <p
           title={item.product.name}
-          className="text-sm leading-6 text-ubiqiti-dark overflow-hidden whitespace-nowrap text-ellipsis w-full"
+          className="text-sm leading-6 text-ubiquiti-dark overflow-hidden whitespace-nowrap text-ellipsis w-full"
         >
           {item.product.name}
         </p>
         <p
           title={item.line.name}
-          className="text-xs leading-5 text-ubiqiti-black-45 overflow-hidden whitespace-nowrap text-ellipsis w-full"
+          className="text-xs leading-5 text-ubiquiti-black-45 overflow-hidden whitespace-nowrap text-ellipsis w-full"
         >
           {item.line.name}
         </p>

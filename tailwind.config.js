@@ -9,25 +9,25 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        ubiqiti: "0px 12px 48px rgba(0, 0, 0, 0.15);",
+        ubiquiti: "0px 12px 48px rgba(0, 0, 0, 0.15);",
       },
       backgroundColor: {
-        "ubiqiti-neutral-1": "#F6F6F8",
-        "ubiqiti-neutral-2": "#FBFBFB",
+        "ubiquiti-neutral-1": "#F6F6F8",
+        "ubiquiti-neutral-2": "#FBFBFB",
       },
       textColor: {
-        "ubiqiti-neutral-2": "#838691",
-        "ubiqiti-neutral-4": "#BDBDBD",
-        "ubiqiti-dark": "#000000a6",
-        "ubiqiti-black-45": "#00000073",
-        "ubiqiti-black-85": "#000000d9",
+        "ubiquiti-neutral-2": "#838691",
+        "ubiquiti-neutral-4": "#BDBDBD",
+        "ubiquiti-dark": "#000000a6",
+        "ubiquiti-black-45": "#00000073",
+        "ubiquiti-black-85": "#000000d9",
       },
       caretColor: {
-        "ubiqiti-blue": "#006FFF",
+        "ubiquiti-blue": "#006FFF",
       },
       borderColor: {
-        "ubiqiti-neutral-3": "#EDEDF0",
-        "ubiqiti-neutral-6": "#B6B9C4",
+        "ubiquiti-neutral-3": "#EDEDF0",
+        "ubiquiti-neutral-6": "#B6B9C4",
       },
     },
   },
