@@ -53,6 +53,28 @@ export default function Home() {
     document.documentElement.classList.remove("overflow-hidden");
   };
 
+  const renderDevices = () => {
+    if (!filteredDevices.length) {
+      return (
+        <div className="h-full w-full flex items-center justify-center">
+          <UEmptyState
+            title="No Devices To Display"
+            description="Try updating your filters to see results"
+          />
+        </div>
+      );
+    }
+
+    return filters.view === ActiveViewType.LIST ? (
+      <DeviceTable
+        devices={filteredDevices}
+        onSelectDevice={onSelectedDevice}
+      />
+    ) : (
+      <DeviceGrid devices={filteredDevices} onSelectDevice={onSelectedDevice} />
+    );
+  };
+
   const productLineChoices = useMemo(() => {
     const choiceArray = (data?.devices ?? []).map(
       ({ line }: { line: { name: string } }) => line.name
@@ -125,17 +147,7 @@ export default function Home() {
         updateFilters={updateFilters}
       />
 
-      {filters.view === ActiveViewType.LIST ? (
-        <DeviceTable
-          devices={filteredDevices}
-          onSelectDevice={onSelectedDevice}
-        />
-      ) : (
-        <DeviceGrid
-          devices={filteredDevices}
-          onSelectDevice={onSelectedDevice}
-        />
-      )}
+      {renderDevices()}
     </div>
   );
 }

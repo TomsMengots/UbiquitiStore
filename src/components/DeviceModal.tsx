@@ -84,7 +84,7 @@ const DeviceModal = ({ device, onCloseModal }: IProps) => {
           width={256}
           height={256}
           alt={device.product.name}
-          className="object-contain w-48 h-48 md:w-64 md:h-64"
+          className="object-cover w-48 h-48 md:w-64 md:h-64"
         />
 
         <div className="mx-5 mt-5 md:mt-0 md:ml-8">

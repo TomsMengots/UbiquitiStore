@@ -4,6 +4,7 @@ import { ActiveViewType, IFilters } from "~/core/types/Filters";
 import { UCloseIcon } from "~/components/common/UCloseIcon";
 import { UInput } from "./common/UInput";
 import { UContextCard } from "./common/UContextCard";
+import { getIconPath } from "~/core/services/ImagesService";
 
 interface IProps {
   updateFilters: Function;
@@ -44,16 +45,6 @@ const Filters = ({ filters, productChoices, updateFilters }: IProps) => {
     updateFilters({ view: selectedView });
   };
 
-  const listIconPath =
-    filters.view === ActiveViewType.LIST
-      ? "/icons/list_active.svg"
-      : "/icons/list_default.svg";
-
-  const gridIconPath =
-    filters.view === ActiveViewType.GRID
-      ? "/icons/grid_active.svg"
-      : "/icons/grid_default.svg";
-
   return (
     <div className="flex justify-center border-b border-b-ubiquiti-neutral-3">
       <div className="relative flex flex-col md:flex-row md:items-center justify-between py-2 px-5 md:pr-7 xl:pr-0 w-full xl:max-w-[1308px]">
@@ -69,14 +60,30 @@ const Filters = ({ filters, productChoices, updateFilters }: IProps) => {
             className="outline-none mr-4 flex-shrink-0"
             onClick={() => updateView(ActiveViewType.LIST)}
           >
-            <Image src={listIconPath} alt="List icon" height={20} width={20} />
+            <Image
+              src={getIconPath(
+                ActiveViewType.LIST,
+                filters.view === ActiveViewType.LIST
+              )}
+              alt="List icon"
+              height={20}
+              width={20}
+            />
           </button>
           <button
             type="button"
             className="outline-none mr-4 flex-shrink-0"
             onClick={() => updateView(ActiveViewType.GRID)}
           >
-            <Image src={gridIconPath} alt="Grid icon" height={20} width={20} />
+            <Image
+              src={getIconPath(
+                ActiveViewType.GRID,
+                filters.view === ActiveViewType.GRID
+              )}
+              alt="Grid icon"
+              height={20}
+              width={20}
+            />
           </button>
           <button
             type="button"

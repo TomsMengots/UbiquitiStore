@@ -1,5 +1,4 @@
 import { IDeviceModel } from "~/core/types/Devices";
-import { UEmptyState } from "./common/UEmptyState";
 import { DeviceGridItem } from "./DeviceGridItem";
 
 interface IProps {
@@ -8,15 +7,6 @@ interface IProps {
 }
 
 const DeviceGrid = ({ devices, onSelectDevice }: IProps) => {
-  if (!devices.length) {
-    return (
-      <UEmptyState
-        title="No Devices To Display"
-        description="Try updating your filters to see the devices"
-      />
-    );
-  }
-
   const selectDevice = (device: IDeviceModel) => {
     onSelectDevice(device);
   };

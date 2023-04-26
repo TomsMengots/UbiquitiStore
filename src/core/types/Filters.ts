@@ -1,6 +1,6 @@
 export enum ActiveViewType {
-  LIST,
-  GRID,
+  LIST = "list",
+  GRID = "grid",
 }
 
 export interface IFilters {
