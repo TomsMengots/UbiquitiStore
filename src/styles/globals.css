@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.device-modal {
+  height: calc(100vh - 49px);
+}
+
+input::placeholder {
+  @apply text-ubiqiti-black-45;
+}
