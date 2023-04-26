@@ -22,13 +22,13 @@ mkcert -install
 ### Step: 4
 Generate certificates for dev environment
 ```bash
-yarn cert:generate
+npm run cert:generate
 ```
 
 ### Step: 5
 Run Webapp on https://localhost:3001
 ```bash
-yarn dev:ssl
+npm run dev:ssl
 ```
 
 
